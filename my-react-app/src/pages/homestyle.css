@@ -1,0 +1,250 @@
+@import url('https://fonts.cdnfonts.com/css/devil-breeze');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/bimbo');
+
+.homescene-root {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #1e1e20;
+  color: #eef8ce;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background-color: #1e1e20;
+  /* Fallback background color */
+  background-image: repeating-linear-gradient(to right, transparent 0 500px, #73814b33 500px 501px);
+  background-size: 100%;
+}
+
+.homescene-root *::-webkit-scrollbar {
+  width: 0;
+}
+
+.homescene-root * {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.homescene-root .section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homescene-root .content-fit {
+  width: min(1200px, 90vw);
+  margin: auto;
+  min-height: 120vh;
+  position: relative;
+  padding-block: 10em;
+}
+
+.homescene-root header {
+  padding-block: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10px;
+  backdrop-filter: blur(20px);
+  z-index: 100;
+  background-color: #1b1b1b11;
+  background-image: repeating-linear-gradient(to right, transparent 0 500px, #eee1 500px 501px);
+}
+
+.homescene-root header .content-fit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: unset !important;
+  padding-block: unset !important;
+}
+
+.homescene-root header .content-fit nav ul {
+  display: flex;
+  gap: 2em;
+}
+
+.homescene-root #banner .title {
+  color: #d1ff48;
+  font-size: 11em;
+  font-family: "devil breeze";
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+
+.homescene-root #banner .title::before {
+  content: attr(data-before);
+  position: absolute;
+  top: 0.5em;
+  inset: 0.66em 0 0 0;
+  z-index: -1;
+  color: #445022;
+}
+
+.homescene-root .section .decorate {
+  position: absolute;
+}
+
+.homescene-root #intro .content-fit {
+  display: flex;
+  gap: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homescene-root .section .number {
+  font-family: "devil breeze";
+  font-size: 15em;
+  font-weight: bold;
+}
+
+.homescene-root .section .content-fit .title {
+  font-family: "devil breeze";
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.homescene-root #description .content-fit {
+  padding-right: 30%;
+}
+
+.homescene-root #description .number {
+  font-size: 5em;
+}
+
+.homescene-root #description .title {
+  font-size: 7em;
+  font-weight: 500;
+}
+
+.homescene-root #contact .content-fit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.homescene-root #contact table {
+  width: min(800px, 90vw);
+  padding-top: 2em;
+  font-size: 2em;
+  margin: auto;
+}
+
+.homescene-root #contact table td {
+  padding-block: 0.5em;
+  border-bottom: 1px dashed #445022;
+}
+
+.homescene-root #contact table td:nth-child(1) {
+  text-align: left;
+  font-weight: 500;
+}
+
+.homescene-root #contact table td:nth-child(2) {
+  text-align: right;
+  font-weight: 200;
+}
+
+.homescene-root #contact .sign {
+  font-family: 'Bimbo', sans-serif;
+  font-size: 10em;
+}
+
+.homescene-root #container3D {
+  position: fixed;
+  inset: 0;
+  /* background-color: red; */
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* Add this for the "Sell Cars" title just below the navbar */
+.homescene-root .main-title {
+  color: #d1ff48;
+  font-size: 4em;
+  font-family: "devil breeze";
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5em auto 1.5em auto;
+  /* Top margin for space below navbar */
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 11;
+}
+
+.homescene-root .main-title::before {
+  content: attr(data-before);
+  position: absolute;
+  top: 0.4em;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  color: #445022;
+  font-size: 0.5em;
+  opacity: 0.7;
+  letter-spacing: 4px;
+  text-align: center;
+  width: 100%;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .homescene-root #banner .title {
+    font-size: 5em;
+  }
+
+  .homescene-root #intro .content-fit {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homescene-root #banner .title {
+    font-size: 3em;
+  }
+
+  .homescene-root #intro .content-fit {
+    flex-direction: column;
+  }
+
+  .homescene-root .section .number {
+    font-size: 5em;
+  }
+
+  .homescene-root .section .content-fit .title {
+    font-size: 2em;
+  }
+
+  .homescene-root #description .content-fit {
+    padding-right: 0;
+  }
+
+  .homescene-root #contact table {
+    font-size: 1em;
+  }
+
+  .homescene-root #contact .sign {
+    font-size: 2em;
+  }
+
+  .homescene-root #container3D {
+    position: absolute;
+  }
+
+  .homescene-root .main-title {
+    font-size: 2em;
+    margin-top: 4.5em;
+    /* More space for mobile nav */
+  }
+
+  .homescene-root .main-title::before {
+    font-size: 0.8em;
+  }
+}

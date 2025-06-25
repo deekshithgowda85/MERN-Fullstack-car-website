@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poetsen+One&display=swap');
+.splash-root * {
+  margin: 0;
+}
+
+.splash-root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.splash-root .title {
+  background: rgba(0, 0, 0, 0); /* semi-transparent dark bg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-root .title h1 {
+  font-family: Poetsen One, sans-serif;
+  color: #fff;
+  font-size: 8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 16px #000a;
+  margin: 0;
+}
+
+.splash-root::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/carimg.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: bgZoomIn 4s ease-in-out 1 forwards;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.splash-root::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/after.png');
+  background-size: cover;
+  background-position: top;
+  transform: scale(2);
+  animation: bgZoomOut 4s ease-in-out 1 forwards;
+  z-index: -1;
+  pointer-events: none;
+}
+@keyframes bgZoomIn {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes bgZoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+
+.splash-root svg path {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 0.1;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: textAnimation 4s ease-in-out 1 forwards;
+}
+@-webkit-keyframes svg-text-anim {
+       40% {
+          stroke-dashoffset: 0;
+          fill: transparent;
+        }
+        60% {
+          stroke-dashoffset: 0;
+          fill: #fcfcfc;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          fill: #fcfcfc;
+        }
+        
+    }
+    /* Most browsers */
+    @keyframes svg-text-anim {
+       40% {
+          stroke-dashoffset: 0;
+          fill: transparent;
+        }
+        60% {
+          stroke-dashoffset: 0;
+          fill: #fcfcfc;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          fill: #fcfcfc;
+        }
+        
+    }

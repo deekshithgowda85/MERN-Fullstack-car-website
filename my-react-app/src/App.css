@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global background styles */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #1e1e20;
+    color: #eef8ce;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-image: url(img/bg.png),
+        repeating-linear-gradient(to right, transparent 0 500px, #73814b33 500px 501px);
+    background-size: 100%;
+}
+
+/* Hide scrollbar for all elements */
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Reset default styles */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Global section styles */
+.section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Global content container */
+.content-fit {
+    width: min(1200px, 90vw);
+    margin: auto;
+    min-height: 100vh;
+    position: relative;
+    padding-block: 10em;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+    /* Add padding-top to prevent content from being hidden by the fixed navbar */
+    padding-top: 2px;
+    /* Adjust this value based on your navbar's height */
+}
+
+/* Your custom styles below */

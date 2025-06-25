@@ -1,0 +1,147 @@
+Test Username Field:
+- Try empty username
+- Try username with spaces only
+- Try username with special characters
+- Try username with numbers
+- Try very long username (>50 characters)
+- Try duplicate username
+
+Test Email Field:
+- Try empty email
+- Try non-existent email
+- Try unverified email
+- Try email with spaces
+- Try email with uppercase letters
+
+Test Password Field:
+- Try empty password
+- Try wrong password
+- Try password with spaces
+- Try password with special characters
+
+Test OTP Input:
+- Try empty OTP
+- Try OTP less than 6 digits
+- Try OTP more than 6 digits
+- Try OTP with letters
+- Try OTP with special characters
+- Try expired OTP (wait 10 minutes)
+- Try incorrect OTP
+- Try OTP for wrong email
+
+Test Resend OTP:
+- Try resending before 1 minute
+- Try resending after 1 minute
+- Try resending for non-existent email
+- Try resending for already verified email
+
+Test Make Field:
+- Try empty make
+- Try make with numbers
+- Try make with special characters
+- Try very long make name
+
+Test Model Field:
+- Try empty model
+- Try model with special characters
+- Try very long model name
+
+Test Year Field:
+- Try empty year
+- Try year before 1900
+- Try year after current year
+- Try year with letters
+- Try year with special characters
+
+Test Price Field:
+- Try empty price
+- Try negative price
+- Try price with letters
+- Try price with special characters
+- Try very large price
+- Try price with more than 2 decimal places
+
+Test Mileage Field:
+- Try empty mileage
+- Try negative mileage
+- Try mileage with letters
+- Try mileage with special characters
+- Try very large mileage
+
+Test Fuel Type Field:
+- Try empty fuel type
+- Try invalid fuel type
+- Try fuel type with numbers
+- Try fuel type with special characters
+
+Test Transmission Field:
+- Try empty transmission
+- Try invalid transmission
+- Try transmission with numbers
+- Try transmission with special characters
+
+Test Description Field:
+- Try empty description
+- Try very long description
+- Try description with special characters
+
+Test Username Update:
+- Try empty username
+- Try username with spaces only
+- Try username with special characters
+- Try duplicate username
+- Try very long username
+
+Test Email Update:
+- Try empty email
+- Try invalid email format
+- Try duplicate email
+- Try email with spaces
+
+Check Response Format:
+- Verify status codes (200, 201, 400, 401, 403, 404, 500)
+- Verify error messages
+- Verify success messages
+- Verify data structure
+- Verify token format
+- Verify user data format
+- Verify car data format
+
+Test Token:
+- Try request without token
+- Try request with invalid token
+- Try request with expired token
+- Try request with malformed token
+- Try request with token for deleted user
+
+Test Authorization:
+- Try accessing other user's data
+- Try modifying other user's car
+- Try deleting other user's car
+
+Test Unique Constraints:
+- Try creating duplicate email
+- Try creating duplicate username
+- Try creating duplicate car listing
+
+Test Foreign Key Constraints:
+- Try creating car with non-existent user
+- Try deleting user with existing cars
+
+Test Server Errors:
+- Try invalid JSON in request
+- Try missing required fields
+- Try invalid field types
+- Try database connection issues
+- Try email service issues
+
+Test Input Sanitization:
+- Try SQL injection in text fields
+- Try XSS in text fields
+- Try command injection
+- Try path traversal
+
+Test Password Security:
+- Verify password hashing
+- Verify password comparison
+- Verify password reset flow
