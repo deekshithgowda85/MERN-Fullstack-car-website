@@ -4,7 +4,7 @@ Carbay is a modern full-stack web application designed for buying, selling, and 
 
 > **Disclaimer:** The name "Carbay" is used for educational and non-commercial purposes. To the best of our knowledge, "Carbay" is not a registered trademark for automotive marketplace software. However, before using this name for commercial purposes, please conduct your own trademark search and legal due diligence to ensure there are no conflicts in your jurisdiction.
 
-[![Watch the demo](https://youtu.be/Tw51GZGZ_Qc?si=tMD34iXfjgN6G_oo)
+[![Watch the demo](https://img.shields.io/badge/Watch%20Demo-YouTube-red?logo=youtube)](https://youtu.be/Tw51GZGZ_Qc?si=tMD34iXfjgN6G_oo)
 
 ---
 
