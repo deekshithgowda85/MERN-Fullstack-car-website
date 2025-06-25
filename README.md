@@ -4,11 +4,12 @@ Carbay is a modern full-stack web application designed for buying, selling, and 
 
 > **Disclaimer:** The name "Carbay" is used for educational and non-commercial purposes. To the best of our knowledge, "Carbay" is not a registered trademark for automotive marketplace software. However, before using this name for commercial purposes, please conduct your own trademark search and legal due diligence to ensure there are no conflicts in your jurisdiction.
 
-[![Watch the demo](https://youtu.be/Tw51GZGZ_Qc?si=tMD34iXfjgN6G_oo)
+[![Demo Video](https://img.youtube.com/vi/Tw51GZGZ_Qc/0.jpg)](https://youtu.be/Tw51GZGZ_Qc?si=tMD34iXfjgN6G_oo)
 
 ---
 
 ## Clone the Repository
+
 ```bash
 git clone https://github.com/deekshithgowda85/Carbay.git
 cd Carbay
@@ -25,6 +26,7 @@ Carbay/
 ```
 
 ## Features
+
 - **User Authentication & Profiles:** Secure registration, login, and profile management for users and admins.
 - **Product & Service Listings:** Browse, search, and filter a wide range of cars, accessories, and automotive services.
 - **Shopping Cart & Orders:** Add products/services to cart, checkout, and track order status.
@@ -39,10 +41,12 @@ Carbay/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v16+ recommended)
 - npm or yarn
 
 ### Backend Setup
+
 ```bash
 cd backend
 npm install
@@ -50,6 +54,7 @@ npm start
 ```
 
 ### Frontend Setup
+
 ```bash
 cd my-react-app
 npm install
@@ -57,6 +62,7 @@ npm run dev
 ```
 
 ### Run Both Frontend & Backend Concurrently (Recommended)
+
 From the root folder, you can run both servers together using [concurrently](https://www.npmjs.com/package/concurrently):
 
 ```bash
@@ -68,7 +74,9 @@ npm run dev
 This will start both the backend and frontend in development mode.
 
 ### Environment Variables
+
 - Create a `.env` file in both `backend/` and `my-react-app/` as needed for your configuration (e.g., database URI, API keys).
 
 ## License
-MIT 
+
+MIT
